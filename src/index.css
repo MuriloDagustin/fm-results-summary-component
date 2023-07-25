@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Hanken Grotesk', sans-serif;
+    src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+
+:root {
+    --bs-body-font-family: 'Hanken Grotesk', system-ui, -apple-system,
+        'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans',
+        Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.bg-purple,
+.btn-purple {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.btn-continue {
+    --color: hsl(224, 30%, 27%);
+
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--color);
+    --bs-btn-border-color: var(--color);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--color);
+    --bs-btn-hover-border-color: var(--color);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-border-color: var(--color);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--color);
+    --bs-btn-disabled-border-color: var(--color);
+    --bs-btn-active-bg: var(--color);
+
+    &:active {
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    }
+}
+
+.main-card {
+    height: 65dvh;
+    min-height: 350px;
+    max-width: 1000px;
+    max-height: 450px;
+}
+
+.result {
+    --result-size: 12rem;
+
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: var(--result-size);
+    height: var(--result-size);
+}
+
+.text-purple {
+    color: var(--bs-purple-color);
+}
+
+@media (max-width: 767.98px) {
+    .main-card {
+        max-height: none;
+    }
+    .result {
+        --result-size: 8rem;
+    }
+    .rounded-top-sm-0 {
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+    }
+}
