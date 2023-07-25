@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'Hanken Grotesk', sans-serif;
-    src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
-}
-
 :root {
     --bs-body-font-family: 'Hanken Grotesk', system-ui, -apple-system,
         'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans',
@@ -51,10 +46,6 @@
     background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     width: var(--result-size);
     height: var(--result-size);
-}
-
-.text-purple {
-    color: var(--bs-purple-color);
 }
 
 @media (max-width: 767.98px) {

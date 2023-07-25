@@ -1,4 +1,3 @@
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Container from 'react-bootstrap/Container';
@@ -17,7 +16,7 @@ function App() {
                     <div className='col-12 col-md-6'>
                         <Card
                             bg='purple'
-                            className='w-100 h-100 rounded-top-sm-0 rounded-5 d-flex justify-content-between align-items-center flex-column text-white text-center row-gap-3 row-gap-md-0'
+                            className='w-100 h-100 rounded-top-sm-0 rounded-5 d-flex justify-content-between align-items-center flex-column text-white text-center row-gap-3 row-gap-md-0 p-4'
                         >
                             <h5 className='m-0 text-white-50'>Your Result</h5>
 
